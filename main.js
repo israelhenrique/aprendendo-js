@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+
 "use strict";
+
 class Pessoa {
   constructor(nome) {
     this.nome = nome
@@ -12,19 +14,19 @@ console.log(pessoa.nome)
 
 const fs = require('fs')
 
-fs.writeFile("teste",pessoa.nome, function(err){
+fs.writeFile("teste", pessoa.nome, function(err){
   if(err){
-    return console.log(err);
+    return console.log(err)
   }
 
-  console.log("Arquivo Salvo");
+  console.log("Arquivo Salvo")
 })
 
 let pessoa2 = {}
 
-fs.readFile("teste","utf8", function (err,nome){
+fs.readFile("teste", "utf8", function (err, nome){
   if(err){
-    return console.log(err);
+    return console.log(err)
   }
 
   pessoa2 = new Pessoa(nome)
