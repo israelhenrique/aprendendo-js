@@ -16,7 +16,9 @@ const fs = require('./delayable-fs')
 // fs.writeDelay = 100
 // fs.readDelay = 50
 
-fs.unlinkSync("teste")
+if (fs.existsSync("teste") {
+  fs.unlinkSync("teste")
+}
 
 fs.writeFile("teste", pessoa.nome, function(err){
   if(err){
