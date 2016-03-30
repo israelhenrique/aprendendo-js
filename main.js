@@ -2,6 +2,8 @@
 
 "use strict";
 
+const filename = "teste"
+
 class Pessoa {
   constructor(nome) {
     this.nome = nome
@@ -16,21 +18,21 @@ const fs = require('./delayable-fs')
 // fs.writeDelay = 100
 // fs.readDelay = 50
 
-if (fs.existsSync("teste") {
-  fs.unlinkSync("teste")
+if (fs.existsSync(filename) {
+  fs.unlinkSync(filename)
 }
 
-fs.writeFile("teste", pessoa.nome, function(err){
+fs.writeFile(filename, pessoa.nome, function(err){
   if(err){
     return console.log(err)
   }
 
-  console.log("Saved file: teste")
+  console.log(`Saved file: ${filename}`)
 })
 
 let pessoa2 = {}
 
-fs.readFile("teste", "utf8", function (err, nome){
+fs.readFile(filename, "utf8", function (err, nome){
   if(err){
     return console.log(err)
   }
