@@ -15,10 +15,10 @@ const pessoa = new Pessoa('Israel')
 console.log(pessoa.nome)
 
 const fs = require('./delayable-fs')
-// fs.writeDelay = 100
-// fs.readDelay = 50
+fs.writeDelay = 100
+fs.readDelay = 50
 
-if (fs.existsSync(filename) {
+if (fs.existsSync(filename)) {
   fs.unlinkSync(filename)
 }
 
