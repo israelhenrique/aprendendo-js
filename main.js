@@ -28,15 +28,13 @@ fs.writeFile(filename, pessoa.nome, function(err){
   }
 
   console.log(`Saved file: ${filename}`)
-})
 
-let pessoa2 = {}
+  fs.readFile(filename, "utf8", function (err, nome){
+    if(err){
+      return console.log(err)
+    }
 
-fs.readFile(filename, "utf8", function (err, nome){
-  if(err){
-    return console.log(err)
-  }
-
-  pessoa2 = new Pessoa(nome)
-  console.log(`Read file: ${pessoa2.nome}`)
+    const pessoa2 = new Pessoa(nome)
+    console.log(`Read file: ${pessoa2.nome}`)
+  })
 })
