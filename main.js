@@ -18,23 +18,58 @@ const fs = require('./delayable-fs')
 fs.writeDelay = 100
 fs.readDelay = 50
 
-if (fs.existsSync(filename)) {
-  fs.unlinkSync(filename)
-}
-
-fs.writeFile(filename, pessoa.nome, function(err){
+fs.readFile(filename, "utf8", function (err, filename){
   if(err){
     return console.log(err)
   }
 
-  console.log(`Saved file: ${filename}`)
+  //const pessoa2 = new Pessoa(nome)
+  console.log(`Read file: ${filename}`)
 
-  fs.readFile(filename, "utf8", function (err, nome){
+
+  fs.readFile(filename, "utf8", function (err, filename){
     if(err){
       return console.log(err)
     }
 
-    const pessoa2 = new Pessoa(nome)
-    console.log(`Read file: ${pessoa2.nome}`)
+    //const pessoa2 = new Pessoa(nome)
+    console.log(`Read file: ${filename}`)
+
+    fs.readFile(filename, "utf8", function (err, filename){
+      if(err){
+        return console.log(err)
+      }
+
+      //const pessoa2 = new Pessoa(nome)
+      console.log(`Read file: ${filename}`)
+
+      fs.readFile(filename, "utf8", function (err, filename){
+        if(err){
+          return console.log(err)
+        }
+
+        //const pessoa2 = new Pessoa(nome)
+        console.log(`Read file: ${filename}`)
+
+
+      })
+
+
+    })
+
+
   })
+
+
 })
+
+
+// fs.writeFile(filename, pessoa.nome, function(err){
+//   if(err){
+//     return console.log(err)
+//   }
+//
+//   console.log(`Saved file: ${filename}`)
+//
+//
+// })
