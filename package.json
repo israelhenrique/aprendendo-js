@@ -4,8 +4,12 @@
   "license": "MIT",
   "main": "./main.js",
   "scripts": {
-    "start": "node $npm_package_main"
+    "start": "node $npm_package_main",
+    "lint": "eslint ."
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0"
+  }
 }
