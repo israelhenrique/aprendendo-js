@@ -1,0 +1,11 @@
+{
+  "name": "aprendendo-js",
+  "private": true,
+  "license": "MIT",
+  "main": "./main.js",
+  "scripts": {
+    "start": "node $npm_package_main"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
