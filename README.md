@@ -15,3 +15,8 @@ npm run start
 ```
 npm run lint
 ```
+
+### Try to auto fix lint:
+```
+npm run lint:fix
+```
