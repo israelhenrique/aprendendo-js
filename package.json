@@ -1,0 +1,16 @@
+{
+  "name": "aprendendo-js",
+  "private": true,
+  "license": "MIT",
+  "main": "./main.js",
+  "scripts": {
+    "start": "node $npm_package_main",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint --silent -- --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0"
+  }
+}
