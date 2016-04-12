@@ -2,6 +2,11 @@
 
 ## Commands:
 
+### Setup
+```
+npm install
+```
+
 ### Running:
 ```
 npm start
@@ -11,10 +16,6 @@ or
 npm run start
 ```
 
-### Setup
-```
-npm install
-```
 
 ### Verify lint:
 ```
