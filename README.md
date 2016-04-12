@@ -11,6 +11,11 @@ or
 npm run start
 ```
 
+### Setup
+```
+npm install
+```
+
 ### Verify lint:
 ```
 npm run lint
